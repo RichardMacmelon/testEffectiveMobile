@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:text="По дате добавления"
+        android:text="@string/by_date_added"
         android:textColor="#12B956"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"

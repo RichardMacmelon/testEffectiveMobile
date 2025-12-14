@@ -1,5 +1,7 @@
 package com.example.effectivemobile.presentation.registration
 
+import android.content.Intent
+import android.net.Uri
 import com.example.effectivemobile.R
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -37,10 +39,23 @@ class RegistrationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        val fullText = binding.registrTextView.text.toString()
+
+        binding.registrTextView.text =
+            viewModel.getColored(fullText)
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.formState.collect { state ->
                     binding.entranceButton.isEnabled = state.isButtonEnabled
+                }
+            }
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.openLinkEvent.collect { url ->
+                    openUrl(url)
                 }
             }
         }
@@ -59,6 +74,19 @@ class RegistrationFragment : Fragment() {
             }
         }
 
+        binding.vkImageButton.setOnClickListener {
+            viewModel.onVkClicked()
+        }
+
+        binding.odnImageButton.setOnClickListener {
+            viewModel.onOkClicked()
+        }
+
+    }
+
+    private fun openUrl(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 
     override fun onDestroyView() {

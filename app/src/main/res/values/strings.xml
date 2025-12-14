@@ -16,4 +16,6 @@
     <string name="exm_description">Освойте backend-разработку и программирование на Java, фреймворки...</string>
     <string name="exm_price">999 ₽</string>
     <string name="details_btn">Подробнее →</string>
+    <string name="by_date_added">По дате добавления</string>
+    <string name="second_filtr">По убыванию даты публикации</string>
 </resources>
