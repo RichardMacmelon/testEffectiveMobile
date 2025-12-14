@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registrationFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.effectivemobile.presentation.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_mainNavigation"
+            app:destination="@id/mainNavigation" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/mainNavigation"
+        app:startDestination="@id/mainScreenFragment">
+
+        <fragment
+            android:id="@+id/mainScreenFragment"
+            android:name="com.example.effectivemobile.presentation.mainScreen.MainScreenFragment"
+            android:label="fragment_main_screen"
+            tools:layout="@layout/fragment_main_screen" />
+        <fragment
+            android:id="@+id/favoritesScreenFragment"
+            android:name="com.example.effectivemobile.presentation.favoritesScreen.FavoritesScreenFragment"
+            android:label="fragment_favorites_screen"
+            tools:layout="@layout/fragment_favorites_screen" />
+        <fragment
+            android:id="@+id/accountScreenFragment"
+            android:name="com.example.effectivemobile.presentation.accountScreen.AccountScreenFragment"
+            android:label="fragment_account_screen"
+            tools:layout="@layout/fragment_account_screen" />
+
+
+    </navigation>
+
+</navigation>
