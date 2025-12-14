@@ -1,10 +1,8 @@
 package com.example.effectivemobile.presentation.favoritesScreen
 
-import android.R.attr.onClick
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.effectivemobile.data.dto.EntityForCourseDto
 import com.example.effectivemobile.data.tables.СoursesDb
 import com.example.effectivemobile.databinding.CourseCardBinding
 import com.example.effectivemobile.presentation.extensions.toReadableDate

@@ -1,6 +1,5 @@
 package com.example.effectivemobile.presentation.mainScreen
 
-import android.R.attr.onClick
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

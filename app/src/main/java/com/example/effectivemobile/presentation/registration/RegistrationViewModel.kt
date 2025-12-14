@@ -1,12 +1,9 @@
 package com.example.effectivemobile.presentation.registration
 
-import android.content.Intent
-import android.graphics.Color
-import android.net.Uri
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import androidx.core.content.ContextCompat.startActivity
+import androidx.core.graphics.toColorInt
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -18,7 +15,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import androidx.core.graphics.toColorInt
 
 @HiltViewModel
 class RegistrationViewModel @Inject constructor() : ViewModel() {

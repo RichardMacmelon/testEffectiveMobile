@@ -18,7 +18,6 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import javax.inject.Inject
 
 @HiltViewModel
@@ -28,9 +27,6 @@ class MainScreenViewModel @Inject constructor(
     private val deleteCourseUseCase: DeleteCourseUseCase,
     private val getAllIdsUseCase: GetAllIdsUseCase
 ) : ViewModel() {
-
-//    private val _items = MutableStateFlow<List<EntityForCourseDto>>(emptyList())
-//    val items: StateFlow<List<EntityForCourseDto>> = _items
 
     private var listCheckboxStates = emptyList<Int>().toMutableList()
 

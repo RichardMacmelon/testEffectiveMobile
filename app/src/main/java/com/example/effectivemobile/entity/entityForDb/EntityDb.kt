@@ -1,7 +1,5 @@
 package com.example.effectivemobile.entity.entityForDb
 
-import java.time.LocalDate
-
 interface EntityDb {
     val id: Int
     val title: String

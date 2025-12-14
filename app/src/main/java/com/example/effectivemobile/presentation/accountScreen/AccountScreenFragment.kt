@@ -1,13 +1,11 @@
 package com.example.effectivemobile.presentation.accountScreen
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.effectivemobile.R
+import androidx.fragment.app.Fragment
 import com.example.effectivemobile.databinding.FragmentAccountScreenBinding
-import com.example.effectivemobile.databinding.FragmentFavoritesScreenBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

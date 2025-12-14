@@ -2,7 +2,6 @@ package com.example.effectivemobile.presentation.registration
 
 import android.content.Intent
 import android.net.Uri
-import com.example.effectivemobile.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,11 +13,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import com.example.effectivemobile.R
 import com.example.effectivemobile.databinding.FragmentRegistrationBinding
-import com.example.effectivemobile.presentation.mainScreen.MainScreenViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import kotlin.getValue
 
 
 @AndroidEntryPoint

@@ -1,7 +1,5 @@
 package com.example.effectivemobile.data.repository
 
-import android.content.Context
-import com.example.effectivemobile.data.api.RetrofitSource
 import com.example.effectivemobile.data.dao.СoursesDao
 import com.example.effectivemobile.data.dto.EntityForCourseDto
 import javax.inject.Inject
