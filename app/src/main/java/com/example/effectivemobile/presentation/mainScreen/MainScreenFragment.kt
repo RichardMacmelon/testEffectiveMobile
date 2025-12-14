@@ -10,6 +10,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.effectivemobile.R
+import com.example.effectivemobile.data.repository.MainRepository
 import com.example.effectivemobile.databinding.FragmentMainScreenBinding
 import com.example.effectivemobile.databinding.FragmentRegistrationBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -22,7 +23,7 @@ class MainScreenFragment : Fragment() {
     private var _binding: FragmentMainScreenBinding? = null
     private val binding get() = _binding!!
 
-//    private val viewModel: MainScreenViewModel by viewModels()
+    private val viewModel: MainScreenViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,13 +35,13 @@ class MainScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-//        viewLifecycleOwner.lifecycleScope.launch {
-//            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-//                viewModel.allInfo.collect { courses ->
-//                    println(courses.toString())
-//                }
-//            }
-//        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.items.collect { courses ->
+                    println(courses)
+                }
+            }
+        }
 
     }
 
