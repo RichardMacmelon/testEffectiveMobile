@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.example.effectivemobile.R
 import com.example.effectivemobile.databinding.FragmentAccountScreenBinding
 import com.example.effectivemobile.databinding.FragmentFavoritesScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AccountScreenFragment : Fragment() {
 
     private var _binding: FragmentAccountScreenBinding? = null

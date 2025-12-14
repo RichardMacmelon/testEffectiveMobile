@@ -12,9 +12,11 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.example.effectivemobile.R
 import com.example.effectivemobile.databinding.FragmentMainScreenBinding
 import com.example.effectivemobile.databinding.FragmentRegistrationBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlin.getValue
 
+@AndroidEntryPoint
 class MainScreenFragment : Fragment() {
 
     private var _binding: FragmentMainScreenBinding? = null

@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import com.example.effectivemobile.R
 import com.example.effectivemobile.databinding.FragmentFavoritesScreenBinding
 import com.example.effectivemobile.databinding.FragmentMainScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class FavoritesScreenFragment : Fragment() {
 
     private var _binding: FragmentFavoritesScreenBinding? = null
