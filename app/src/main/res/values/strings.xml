@@ -12,4 +12,8 @@
     <string name="favorites">Избранное</string>
     <string name="account">Аккаунт</string>
     <string name="exam_search">Search courses...</string>
+    <string name="exm_title">Java-разработчик с нуля</string>
+    <string name="exm_description">Освойте backend-разработку и программирование на Java, фреймворки...</string>
+    <string name="exm_price">999 ₽</string>
+    <string name="details_btn">Подробнее →</string>
 </resources>

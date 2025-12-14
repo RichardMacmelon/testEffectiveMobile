@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_registration" >
         <action
             android:id="@+id/action_registrationFragment_to_mainNavigation"
-            app:destination="@id/mainNavigation" />
+            app:destination="@id/mainNavigation"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 
     <navigation

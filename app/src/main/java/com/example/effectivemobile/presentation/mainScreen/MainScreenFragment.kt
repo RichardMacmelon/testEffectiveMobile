@@ -25,6 +25,8 @@ class MainScreenFragment : Fragment() {
 
     private val viewModel: MainScreenViewModel by viewModels()
 
+    private val recyclerViewAdapter = RecyclerViewAdapter()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,10 +37,12 @@ class MainScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        binding.recyclerview.adapter = recyclerViewAdapter
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.items.collect { courses ->
-                    println(courses)
+                    recyclerViewAdapter.setData(courses)
                 }
             }
         }
