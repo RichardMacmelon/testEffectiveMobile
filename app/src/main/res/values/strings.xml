@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EffectiveMobile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="entrance">Вход</string>
+    <string name="email">Email</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="hintInEditTextPassword">Введите пароль</string>
+    <string name="haventAcc">Нет аккаунта? Регистрация</string>
+    <string name="forgotPass">Забыли пароль</string>
+    <string name="home">Главная</string>
+    <string name="favorites">Избранное</string>
+    <string name="account">Аккаунт</string>
+    <string name="exam_search">Search courses...</string>
+</resources>

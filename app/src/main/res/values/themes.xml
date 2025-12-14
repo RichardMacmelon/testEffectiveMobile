@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EffectiveMobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Цвет фона всего приложения -->
+        <item name="android:windowBackground">#151515</item>
+
+        <!-- Цвет статусбара (если не прозрачный) -->
+        <item name="android:statusBarColor">#151515</item>
+
+        <!-- Цвет панели навигации (если есть) -->
+        <item name="android:navigationBarColor">#151515</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Пример кастомизации цветов Material -->
+        <item name="colorPrimary">#151515</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#151515</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+    </style>
+
+    <style name="NoActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+        <item name="shapeAppearance">@null</item>
+    </style>
+
+    <style name="Theme.EffectiveMobile" parent="Base.Theme.EffectiveMobile" />
+</resources>
